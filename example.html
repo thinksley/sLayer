@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script type="text/javascript" src="popDialog.js"></script>
+<link rel="stylesheet" href="popDialog.css" type="text/css">
+<script type="text/javascript">
+window.onload=function()
+{
+	var oInput=document.getElementsByTagName('input');
+	oInput[0].onclick=oInput[2].onclick=function(){
+		var d1=new Dialog();
+		d1.init({
+			iNow:0,
+			content:'你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀',
+			drag:true,
+			mark:true
+		});
+	}
+	oInput[1].onclick=function(){
+		var d2=new Dialog();
+		d2.init({
+			iNow:1,
+			w:400,
+			title:'this is title',
+			dir:'right',
+			mark:true
+		});
+	}
+
+	
+}	
+</script>
+<style>
+input{ padding:10px 20px; text-align: center; }
+input.btn2{ margin-top: 600px; }
+input.btn3{ margin-top: 600px; }
+
+</style>
+</head>
+<body>
+	<input type="button" value="1" class="btn1"><br>
+	<input type="button" value="2" class="btn2"><br>
+	<input type="button" value="3" class="btn3">
+
+</body>
+</html>
