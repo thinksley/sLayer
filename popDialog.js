@@ -6,6 +6,7 @@ function Dialog()
     this.url='';
     this.startTime=+new Date;
 	this.settings={   
+
 			w:300,				//默认宽度
 			title:'提示',	    //默认标题
 			dir:'center',		//默认居中	
@@ -23,9 +24,11 @@ Dialog.prototype.init=function(opts){  //自定义配置
 	
 
 	//点击第一次才生成div层
+	
 	if(this.json[opts.iNow]==undefined)
 	{
 		this.json[opts.iNow]=true;
+
 	}
 
 	if(this.json[opts.iNow])
