@@ -3,7 +3,9 @@
 
 插件参数：this.settings={   
 			w:300,				//默认宽度
+			
 			title:'提示',	    //默认标题
+			
 			dir:'center',		//默认居中	
 			mark:false,		    //是否有笼罩层，默认隐藏
 			content:'你好',     //默认文字内容
